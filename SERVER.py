@@ -45,4 +45,6 @@ def recieving () : # handles incoming client connections
         client.send('connected to server!'.encode('ascii'))     # message is send to client from server after recieving the connection and storing the nicknames
     # handling the thread for client :
         thread = threading.Thread(target=handle, args=(client,)) # (target = handle , args=(client,)) thread now start handling communication with client
-        thread.start()                                           # without threads server will be able to handle one client only; so we use threads to handle multiple clients concurrently 
+        thread.start()     
+        # without threads server will be able to handle one client only; so we use threads to handle multiple clients concurrently 
+# helloo hii
